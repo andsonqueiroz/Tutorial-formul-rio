@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Olá, seja bem-vindo ao formulário teste de aprendizado meu.</h1>
+        <p>estou reaprendendo html kkkk</p>
+    </div>
+
+    <div>
+        <form action="">
+            <fieldset> <!-- O fieldset serve para traçar uma linha em volta do formulário -->
+                <label for="nome">Digite seu nome</label>  <!-- O LABEL SERVE PARA "ARMAZENAR" A INFORMAÇÃO DO INPUT -->
+                <input type="text" name="nome" placeholder="placeholder" required> <!-- "required" significa preenchimento obrigatório -->
+                <br>
+                <label for="sobrenome">Digite o seu sobrenome</label> <!-- O LABEL SERVE PARA "ARMAZENAR" A INFORMAÇÃO DO INPUT, o "for" do label tem que ter o mesmo nome do "name" do input -->
+                <input type="text" name="sobrenome" id="" placeholder="placeholder de novo" required> <!-- "required" significa preenchimento obrigatório -->
+                <p>o label serve para "armazenar" a informação do input</p>
+                <p>o "required" no fim do input serve para ser preenchido obrigatoriamente.</p>
+            </fieldset>
+
+            <p>O fieldset serve para traçar uma linha em volta do formulário</p>
+
+            <label for="email">Digite o seu email</label> 
+            <input type="email" name="email" id="email" placeholder="o teu email aqui rapá" required>
+
+            <br> <!-- O br É QUEBRA DE LINHA -->
+            <label for="selecionar subárea">Selecione sua subárea</label>
+            <select name="Selecionar subárea" id="subárea">
+                <option value="" selected disabled>Selecione</option> <!-- selected disabled É PARA FICAR UMA OPÇÃO SELECIONADA SÓ COM O NOME, SEM VALOR NENHUM-->
+                <option value="front">Front End</option>
+                <option value="back">Back End</option>
+                <option value="full">Full stack</option>
+            </select>
+
+            <fieldset>
+                <p>voltamos ao fieldset</p>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento">
+
+                <div>
+                    <label>Gênero:</label>
+                    <label>
+                        <input type="radio" name="genero" id="" value="masc">Masculino <!-- O "name" DOS RADIO PRECISA SER OS MESMOS, SENÃO NA HORA DE MARCAR A BOLINHA, SERÁ POSSIVEL MARCAR MAIS DE 1-->
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="fem">Feminino
+                    </label>
+                </div>
+            </fieldset>
+            <input type="submit"> <!-- E POR FIM, BOTÃO DE ENVIAR FORMULÁRIO -->
+        </form>
+    </div>
+</body>
+</html>
